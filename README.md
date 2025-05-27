@@ -1,6 +1,6 @@
 ## CS-MONITOR
 
-A tool built with Go for Collecting Metrics of a Running Containers
+An Exchangeable Image File Format(EXIF) Parser Written in Golang
 
 ## Usage
 
