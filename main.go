@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 
 	"github.com/varsilias/exif-parser/parser"
 )
@@ -19,8 +20,12 @@ func main() {
 	flag.StringVar(output, "o", "output.json", "Short for --output")
 
 	flag.Parse()
+	absPath, err := filepath.Abs(*image)
+	if err != nil {
+		log.Fatalf("Failed to resolve absolute path: %v", err)
+	}
 
-	_, err := os.Stat(*image)
+	_, err = os.Stat(absPath)
 	if err != nil {
 		fmt.Println("Error reading file")
 		os.Exit(1)
