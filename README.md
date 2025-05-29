@@ -1,4 +1,4 @@
-## CS-MONITOR
+## EXIF Parser
 
 An Exchangeable Image File Format(EXIF) Parser Written in Golang
 
