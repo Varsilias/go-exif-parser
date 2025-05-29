@@ -85,7 +85,7 @@ var exifTagNames = map[uint16]string{
 	0x9207: "MeteringMode",
 	0x920A: "FocalLength",
 
-	// GPS tags (if you plan to parse them later)
+	// GPS Related data
 	0x0000: "GPSVersionID",
 	0x0001: "GPSLatitudeRef",
 	0x0002: "GPSLatitude",
